@@ -1,0 +1,10 @@
+name: batch-pipeline
+storage: file:///Users/kds/workspace/pyspark-ex/01_batch_pipeline/pipeline-storage
+
+libraries:
+  - glob:
+      include: transformations/ingest.py
+  - glob:
+      include: transformations/transform.py
+  - glob:
+      include: transformations/load.py
